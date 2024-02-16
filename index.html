@@ -1,19 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My GitHub Pages Site</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Button Menu</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        
+        .menu {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            background-color: #333;
+            padding: 20px;
+        }
+        
+        .menu button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #555;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .menu button:hover {
+            background-color: #777;
+        }
+        
+        .content {
+            margin-left: 220px; /* Adjust based on menu width */
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My GitHub Pages Site</h1>
-    </header>
-    <main>
-        <p>I'm hosted with GitHub Pages.</p>
-        <!-- Add more content here as you wish -->
-    </main>
-    <footer>
-        <p>&copy; 2024 Your Name</p>
-    </footer>
+    <div class="menu">
+        <button onclick="alert('Button 1 clicked')">Button 1</button>
+        <button onclick="alert('Button 2 clicked')">Button 2</button>
+        <button onclick="alert('Button 3 clicked')">Button 3</button>
+        <button onclick="alert('Button 4 clicked')">Button 4</button>
+    </div>
+    <div class="content">
+        <h1>Welcome to Interactive Button Menu</h1>
+        <p>This is the content area where your main content will be displayed.</p>
+    </div>
 </body>
 </html>
