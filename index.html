@@ -3,60 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Button Menu</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: black;
-            font-family: Arial, sans-serif;
-            color: white;
-        }
-        
-        .menu {
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 200px;
-            height: 100%;
-            background-color: #333;
-            padding: 20px;
-        }
-        
-        .menu button {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            background-color: #555;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        
-        .menu button:hover {
-            background-color: #777;
-        }
-        
-        .content {
-            margin-left: 220px; /* Adjust based on menu width */
-            padding: 20px;
-        }
-    </style>
+    <title>Your Title Here</title>
+    <!-- Link to 98.css -->
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <!-- Link to your custom styles.css -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="menu">
-        <button onclick="alert('Button 1 clicked')">Button 1</button>
-        <button onclick="alert('Button 2 clicked')">Button 2</button>
-        <button onclick="alert('Button 3 clicked')">Button 3</button>
-        <button onclick="alert('Button 4 clicked')">Button 4</button>
+    <div class="window" style="width: 300px">
+        <div class="title-bar">
+            <div class="title-bar-text">A Window With Stuff In It</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <p>There's so much room for activities!</p>
+        </div>
     </div>
-    <div class="content">
-        <h1>Welcome to Interactive Button Menu</h1>
-        <p>This is the content area where your main content will be displayed.</p>
-    </div>
+    <!-- Your content goes here -->
 </body>
 </html>
